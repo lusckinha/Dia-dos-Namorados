@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Nosso Amor ❤️</title>
+  <link href="https://cdn.jsdelivr.net/npm/computer-modern-font@1.0.4/fonts.css" rel="stylesheet" />
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Computer Modern Serif', serif;
+      background: #121212;
+      color: #eee;
+      text-align: center;
+      overflow-x: hidden;
+    }
+
+    h1 {
+      margin-top: 2rem;
+      font-size: 2.5rem;
+      color: #ff4c4c;
+      text-shadow: 0 0 6px #ff4c4c;
+    }
+
+    p {
+      font-size: 1.2rem;
+      margin: 1rem auto;
+      max-width: 600px;
+      color: #ddd;
+      line-height: 1.5;
+      text-shadow: 0 0 4px rgba(255, 76, 76, 0.8);
+    }
+
+    .balloon {
+      position: fixed;
+      bottom: 0;
+      user-select: none;
+      pointer-events: none;
+      animation-timing-function: linear;
+      will-change: transform, opacity;
+      font-size: 24px;
+      animation-name: floatUp;
+      filter: drop-shadow(0 0 6px #ff4c4c);
+    }
+
+    @keyframes floatUp {
+      0% { transform: translateY(0); opacity: 1; }
+      100% { transform: translateY(-120vh); opacity: 0; }
+    }
+
+    .musica {
+      margin: 2rem auto;
+    }
+
+    .musica button {
+      padding: 0.5rem 1rem;
+      background: #ff4c4c;
+      border: none;
+      border-radius: 12px;
+      color: white;
+      font-size: 1rem;
+      cursor: pointer;
+      box-shadow: 0 4px 10px rgba(255, 76, 76, 0.7);
+    }
+
+    .musica button:hover {
+      background-color: #e04040;
+    }
+
+    #player {
+      margin-top: 1rem;
+      display: none;
+    }
+
+    #counter {
+      font-size: 1.3rem;
+      margin: 1rem auto;
+      color: #ff4c4c;
+      font-weight: bold;
+    }
+
+    .slideshow-container {
+      position: relative;
+      width: 90%;
+      max-width: 400px;
+      margin: 2rem auto;
+      border-radius: 20px;
+      overflow: hidden;
+      box-shadow: 0 10px 20px rgba(255, 76, 76, 0.5);
+      background: #330000;
+    }
+
+    .mySlides {
+      display: none;
+      width: 100%;
+      height: 100%;
+    }
+
+    .mySlides.active {
+      display: block;
+    }
+
+    .mySlides img {
+      width: 100%;
+      height: 300px;
+      object-fit: contain;
+      background-color: #000;
+    }
+
+    .frase-romantica {
+      margin: 2rem auto 1rem;
+      font-size: 1.3rem;
+      max-width: 90%;
+      color: #ff8fa3;
+      min-height: 60px;
+    }
+
+    .surpresa-btn {
+      padding: 0.6rem 1.2rem;
+      background: #ff4c4c;
+      border: none;
+      border-radius: 20px;
+      color: white;
+      font-size: 1rem;
+      cursor: pointer;
+      box-shadow: 0 4px 10px rgba(255, 76, 76, 0.7);
+    }
+
+    @media (max-width: 600px) {
+      h1 { font-size: 1.8rem; }
+      .mySlides img { height: 200px; }
+      .frase-romantica { font-size: 1.1rem; }
+      .musica button, .surpresa-btn { font-size: 0.9rem; }
+    }
+  </style>
+</head>
+<body>
+  <h1>Desde 12 de Maio de 2021 💖</h1>
+  <div id="counter"></div>
+  <p>
+    Há mais de <strong>4 anos</strong>, começamos a escrever nossa história. Entre sorrisos, desafios e conquistas, o amor foi se criando.<br />
+    Esse site é só uma pequena forma de dizer o quanto você é especial pra mim, usando um pouco do que estudo, queria dizer que eu não quero que saia da minha vida, quero comemorar todas essas datas com voce, te amando cada vez mais princesa. Você é meu amor.<br />
+    Simples mas feito com todo amor do mundo pra você. ❤️<br />Eu te amo hoje, amanhã e sempre. ❤️
+  </p>
+
+  <div class="musica">
+    <button onclick="document.getElementById('bg-music').play(); this.style.display='none';">🎧 A que me faz pensar em nós dois ❤️</button>
+    <audio id="bg-music" loop>
+      <source src="https://www.dropbox.com/scl/fi/nssrosiqf484el1lvt8vg/Vocaroo-15yxyk8wBSbE.mp3?rlkey=0vunduzuit1o9ffmt3j6vmfvj&raw=1" type="audio/mp3" />
+    </audio>
+  </div>
+
+  <div class="slideshow-container">
+    <div class="mySlides active"><img src="https://i.imgur.com/zKFj0G2.jpg" /></div>
+    <div class="mySlides"><img src="https://i.imgur.com/7OuOOgt.jpg" /></div>
+    <div class="mySlides"><img src="https://i.imgur.com/YSFEnGl.jpg" /></div>
+    <div class="mySlides"><img src="https://i.imgur.com/hhKXmkO.jpg" /></div>
+    <div class="mySlides"><img src="https://i.imgur.com/V3qh1rL.jpg" /></div>
+    <div class="mySlides"><img src="https://i.imgur.com/bhufQOT.jpg" /></div>
+    <div class="mySlides"><img src="https://i.imgur.com/kXqJktv.jpg" /></div>
+    <div class="mySlides"><img src="https://i.imgur.com/yQmJ1GB.jpg" /></div>
+    <div class="mySlides"><img src="https://i.imgur.com/Bbnftl6.jpg" /></div>
+    <div class="mySlides"><img src="https://i.imgur.com/y031RVD.jpg" /></div>
+    <div class="mySlides"><img src="https://i.imgur.com/cIP0I53.jpg" /></div>
+    <div class="mySlides"><img src="https://i.imgur.com/GdmhhoH.jpg" /></div>
+    <div class="mySlides"><img src="https://i.imgur.com/Ggi8oRR.jpg" /></div>
+    <div class="mySlides"><img src="https://i.imgur.com/qfTJnKk.jpg" /></div>
+    <div class="mySlides"><img src="https://i.imgur.com/PR1WdI2.jpg" /></div>
+    <div class="mySlides"><img src="https://i.imgur.com/AgWWa5a.jpg" /></div>
+    <div class="mySlides"><img src="https://i.imgur.com/a8SFKp9.jpg" /></div>
+    <div class="mySlides"><img src="https://i.imgur.com/88xzepL.jpg" /></div>
+    <div class="mySlides"><img src="https://i.imgur.com/6NSDn6V.jpg" /></div>
+    <div class="mySlides"><img src="https://i.imgur.com/svCfNmF.jpg" /></div>
+  </div>
+
+  <div class="frase-romantica" id="fraseRomantica">Aperta no botãozinho princesa ❤️</div>
+  <button class="surpresa-btn" onclick="mostrarFrase()">💌 Eu te amo</button>
+
+  <script>
+    function atualizarContador() {
+      const inicio = new Date('2021-05-12T00:00:00');
+      const agora = new Date();
+      const diff = agora - inicio;
+      const dias = Math.floor(diff / (1000 * 60 * 60 * 24));
+      const horas = Math.floor((diff / (1000 * 60 * 60)) % 24);
+      const minutos = Math.floor((diff / (1000 * 60)) % 60);
+      const segundos = Math.floor((diff / 1000) % 60);
+      document.getElementById("counter").textContent =
+        `Tempo juntos: ${dias} dias, ${horas}h ${minutos}m ${segundos}s`;
+    }
+    setInterval(atualizarContador, 1000);
+    atualizarContador();
+
+    let slideIndex = 0;
+    const slides = document.querySelectorAll(".mySlides");
+
+    function showSlides() {
+      slides.forEach(slide => slide.classList.remove("active"));
+      slideIndex = (slideIndex + 1) % slides.length;
+      slides[slideIndex].classList.add("active");
+    }
+    setInterval(showSlides, 3000);
+
+    function criarBaloes() {
+      for (let i = 0; i < 8; i++) {
+        const b = document.createElement("div");
+        b.className = "balloon";
+        b.style.left = Math.random() * 100 + "vw";
+        b.style.fontSize = 20 + Math.random() * 25 + "px";
+        b.style.animationDuration = 8 + Math.random() * 5 + "s";
+        b.style.color = "#ff4c4c";
+        b.style.opacity = 0.4 + Math.random() * 0.6;
+        b.textContent = "❤️";
+        b.addEventListener("animationend", () => {
+          b.remove();
+        });
+        document.body.appendChild(b);
+      }
+    }
+    setInterval(criarBaloes, 2000);
+
+    const frases = [
+      "Você é o motivo do meu sorriso todos os dias, mesmo distante ❤️",
+      "Você é minha alma 💑",
+      "Te amo mais do que ontem e menos do que amanhã 💖",
+      "Pensar em você facilita minhas ações diárias ✨",
+      "Você sempre será meu grande amor 😍",
+      "Se eu pudesse te dar uma coisa, seria a capacidade de se ver com meus olhos — só assim saberia o quanto é enorme meus sentimentos por você 💘",
+      "Cada segundo ao seu lado vale mais que mil vidas 🌹",
+      "Nosso amor é a minha história favorita, e espero que tenha um final feliz 📖",
+      "Você é a luz que ilumina meu coração 💡❤️",
+      "Com você, tudo faz sentido 💖",
+      "Eu escolho você. Sempre ❤️"
+    ];
+
+    function mostrarFrase() {
+      const idx = Math.floor(Math.random() * frases.length);
+      document.getElementById("fraseRomantica").textContent = frases[idx];
+    }
+  </script>
+</body>
+</html>
